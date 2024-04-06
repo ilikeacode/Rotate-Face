@@ -1,0 +1,22 @@
+/* I believe .logo img{position: absolute;} is preventing the face from rotating. 
+*/ 
+.logo{
+  position: relative;
+}
+
+.logo img{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+#face{
+  animation:rotate 5s; 
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+
+@keyframes rotate {
+  100% {transform: rotate(360deg);}
+}
